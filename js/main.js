@@ -8,6 +8,7 @@ let ocultar=""
 
 function encriptar(texto) {
   if(texto!=""){
+    texto=texto.toLowerCase();
     document.getElementsByTagName("img")[2].style.display="none"
     document.getElementsByTagName("p")[1].style.display="none"
     document.getElementsByTagName("textarea")[1].style.height="54vh"
@@ -45,6 +46,7 @@ function encriptar(texto) {
   return nuevoTexto;
 }
 function desencriptar(texto, a, b) {
+  texto=texto.toLowerCase();
     let salida=""
     for(let i=0;i<a.length;i++){
         if(i===0){
