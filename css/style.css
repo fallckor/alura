@@ -1,0 +1,178 @@
+:root {
+  --background-color: #f3f5fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #0a3871;
+  font-size: 32px;
+}
+
+body {
+  background-color: #f3f5fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.alura {
+  display: grid;
+  grid-template-columns: 1.5fr 6fr 2.5fr;
+  height: 95vh;
+  width: 95%;
+}
+.alura .logo img {
+  width: 46px;
+  height: 46px;
+}
+.alura .textIN {
+  place-self: center;
+  width: 90%;
+}
+.alura .textIN textarea {
+  border: none;
+  padding: 0;
+  outline: none;
+  width: 100%;
+  height: 54vh;
+  background-color: #f3f5fc;
+}
+.alura .textIN textarea::placeholder {
+  color: #0a3871;
+}
+.alura .textIN p {
+  font-size: 0.5rem;
+  color: gray;
+}
+.alura .textIN div {
+  text-align: center;
+}
+.alura .textIN div button {
+  width: 49%;
+  background-color: #0a3871;
+  color: white;
+  border-radius: 24px;
+  height: 67px;
+  font-size: 16px;
+}
+.alura .textIN div button:nth-child(2) {
+  background-color: #E5E5E5;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+.alura .textOUT {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+.alura .textOUT p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.alura .textOUT textarea {
+  font-size: 0.6rem;
+  text-align: center;
+  color: black;
+  width: 95%;
+  height: 30vh;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+.alura .textOUT img {
+  width: 85%;
+}
+.alura .textOUT div {
+  display: none;
+  width: 90%;
+  text-align: center;
+}
+.alura .textOUT div button {
+  width: 100%;
+  background-color: #E5E5E5;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  height: 67px;
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .alura {
+    height: 100vh;
+    width: 95%;
+    grid-template-rows: 3rem 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  .alura .logo {
+    align-self: center;
+  }
+  .alura .textIN textarea {
+    height: 40vh;
+  }
+  .alura .textIN div button {
+    width: 95%;
+  }
+  .alura .textIN div button:nth-child(2) {
+    margin-top: 20px;
+  }
+  .alura .textOUT {
+    height: 40%;
+  }
+  .alura .textOUT p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: black;
+  }
+  .alura .textOUT textarea {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .alura .textOUT img {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .alura {
+    height: 100vh;
+    width: 95%;
+    grid-template-rows: 4rem 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .alura .logo {
+    align-self: center;
+  }
+  .alura .textOUT {
+    height: 40%;
+  }
+  .alura .textOUT p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: black;
+  }
+  .alura .textOUT textarea {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .alura .textOUT img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
