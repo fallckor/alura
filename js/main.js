@@ -7,8 +7,9 @@ let ocultar=""
 
 
 function encriptar(texto) {
+  texto=texto.toLowerCase();
   if(texto!=""){
-    texto=texto.toLowerCase();
+    
     document.getElementsByTagName("img")[2].style.display="none"
     document.getElementsByTagName("p")[1].style.display="none"
     document.getElementsByTagName("textarea")[1].style.height="54vh"
